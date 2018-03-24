@@ -7,7 +7,7 @@ const TIME = 180000
 controller({
   'checkers': [
     {
-      'name': 'test',
+      'name': 'drops',
       'condition': (lastTicker, currentTicker) => currentTicker.c <= (lastTicker.c * (1 - PERCENTAGE)),
       'update': (lastTicker, currentTicker) => {
         if (currentTicker.E - lastTicker.E > TIME) {
